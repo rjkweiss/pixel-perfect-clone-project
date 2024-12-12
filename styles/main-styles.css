@@ -1,0 +1,42 @@
+@import url('./components/header-content.css');
+@import url('./components/main-content.css');
+@import url('./components/footer-content.css');
+
+@font-face {
+    font-family: calibre;
+    src: url('./fonts/calibre-font-family-1733949033-0/TestCalibre-Regular-BF661746edbee52.otf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 242, 239);
+    font-family: 'calibre', Helvetica, sans-serif;
+    color: rgb(51, 49, 33);
+    margin: 0;
+    border: 2px solid red;
+}
+
+.wrapper-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+main {
+    border: 2px solid darkcyan;
+}
+
+footer {
+    border: 2px solid mediumvioletred;
+}
+
+.copy-right-banner {
+   background-color: #333121;
+   display: flex;
+   border: 2px solid black;
+}
