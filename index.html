@@ -4,11 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hipcamp | Tent Camping, RV Parks, Cabins & Glamping</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
         <link rel="stylesheet" href="./styles/main-styles.css">
+        <script src="./scripts/slideshow-handling.js"></script>
     </head>
     <body>
-        <div class="wrapper-container">
-            <header>
+        <header>
+            <div class="wrapper-header">
                 <div class="logo">
                     <img src="./images/hipcamp.png" alt="Hipcamp logo">
                 </div>
@@ -36,11 +38,551 @@
                         </button>
                     </div>
                 </div>
-            </header>
+            </div>
+        </header>
+        <div class="wrapper-container">
 
             <main>
-                <div class="home-page-header"></div>
-                <div class="favorites-near-you"></div>
+                <div class="home-page">
+                    <div class="home-page-header">
+                        <div class="home-page-header-title">
+                            <h2>Camp your way.</h2>
+                        </div>
+                        <div class="home-page-header-subtitle">
+                            <h1>
+                                Tent sites, RV spots, and glamping - find the perfect
+                                site to match your camping style.
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="search-box">
+                        <div class="search-box-toggle-buttons">
+                            <button class="btn toggle-btn active">
+                                <span class="toggle-btn-text">Destination</span>
+                            </button>
+                            <button class="btn toggle-btn">
+                                <span class="toggle-btn-text">RoadTrip</span>
+                            </button>
+                        </div>
+                        <div class="search-form">
+                            <form action="">
+                                <div class="input-fields">
+                                    <div class="search-destinations">
+                                        <input type="text" class="fontAwesome" name="searchDestinations" placeholder="&#xf041; Search destinations">
+                                    </div>
+                                    <div class="add-dates">
+                                        <input type="datetime" class="fontAwesome" name="addDates" placeholder="&#xf133; Add dates">
+                                    </div>
+                                    <div class="add-guests">
+                                        <input type="text" class="fontAwesome" name="addGuests" placeholder="&#xf007; Add guests">
+                                    </div>
+                                </div>
+                                <div class="form-btn">
+                                    <button class="btn">
+                                        <div class="fontAwesome btn-description">&#xf002; search</div>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="favorites-near-you">
+                    <div class="favorites-section-title">
+                        <h2>Camper favorites near St Louis</h2>
+                    </div>
+                    <div class="favorites-card-carousel">
+                        <!-- retreat -->
+                        <div class="favorites-card">
+                            <div class="carousel">
+                                <div class="slide-1 section-slides fade">
+                                    <img src="./images/retreat-to-country-imgs/pic-1.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/retreat-to-country-imgs/pic-2.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/retreat-to-country-imgs/pic-3.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/retreat-to-country-imgs/pic-4.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/retreat-to-country-imgs/pic-5.png" alt="">
+                                </div>
+
+                                <!-- back and forward buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- dots on the slides -->
+                                <div style="text-align:center">
+                                    <span class="dot active" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                </div>
+                            </div>
+
+                            <!-- card with info -->
+                            <div class="carousel-description">
+                                <div class="site-rating">
+                                    <div class="icon-percentage">
+                                        <div class="icon">
+                                            <span class="fontAwesome">&#xf164;</span>
+                                        </div>
+                                        <div class="percentage">
+                                            <span>100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-numbers">
+                                        (126)
+                                    </div>
+                                </div>
+                                <div class="site-title">
+                                    <h3>Retreat to the Country</h3>
+                                </div>
+                                <div class="site-info">
+                                    <span class="site-size">4 sites . Lodging</span>
+                                    <span class="site-location">10 acres . Holts Summit, MO</span>
+                                </div>
+                                <div class="price">
+                                    from <span class="nightly-rate">$20</span> / night
+                                </div>
+                            </div>
+                        </div>
+                        <!-- hummingbird hollow -->
+                        <div class="favorites-card btns-displayed-on">
+                            <div class="carousel">
+                                <div class="slide-1 section-slides fade">
+                                    <img src="./images/hummingbird-hollow/pic-1.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/hummingbird-hollow/pic-2.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/hummingbird-hollow/pic-3.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/hummingbird-hollow/pic-4.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/hummingbird-hollow/pic-5.png" alt="">
+                                </div>
+
+                                <!-- back and forward buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- dots on the slides -->
+                                <div style="text-align:center">
+                                    <span class="dot active" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                </div>
+                            </div>
+
+                            <!-- card with info -->
+                            <div class="carousel-description">
+                                <div class="site-rating">
+                                    <div class="icon-percentage">
+                                        <div class="icon">
+                                            <span class="fontAwesome">&#xf164;</span>
+                                        </div>
+                                        <div class="percentage">
+                                            <span>99%</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-numbers">
+                                        (504)
+                                    </div>
+                                </div>
+                                <div class="site-title">
+                                    <h3>hummingbird Hollow Outdoors</h3>
+                                </div>
+                                <div class="site-info">
+                                    <span class="site-size">30 sites . Lodging, RVs, Tents</span>
+                                    <span class="site-location">27 acres . Saint Clair, MO</span>
+                                </div>
+                                <div class="price">
+                                    from <span class="nightly-rate">$21.25</span> / night
+                                </div>
+                            </div>
+                        </div>
+                        <!-- spring Lake Ranch -->
+                        <div class="favorites-card">
+                            <div class="carousel">
+                                <div class="slide-1 section-slides fade">
+                                    <img src="./images/spring-lake/pic-1.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/spring-lake/pic-2.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/spring-lake/pic-3.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/spring-lake/pic-4.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/spring-lake/pic-5.png" alt="">
+                                </div>
+
+                                <!-- back and forward buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- dots on the slides -->
+                                <div style="text-align:center">
+                                    <span class="dot active" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                </div>
+                            </div>
+
+                            <!-- card with info -->
+                            <div class="carousel-description">
+                                <div class="site-rating">
+                                    <div class="icon-percentage">
+                                        <div class="icon">
+                                            <span class="fontAwesome">&#xf164;</span>
+                                        </div>
+                                        <div class="percentage">
+                                            <span>93%</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-numbers">
+                                        (1798)
+                                    </div>
+                                </div>
+                                <div class="site-title">
+                                    <h3>Spring Lake Ranch</h3>
+                                </div>
+                                <div class="site-info">
+                                    <span class="site-size">30 sites . Lodging, RVs, Tents</span>
+                                    <span class="site-location">101 acres . Potosi, MO</span>
+                                </div>
+                                <div class="price">
+                                    from <span class="nightly-rate">$18.90</span> / night
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- Wine Trail wilderness -->
+                        <div class="favorites-card">
+                            <div class="carousel">
+                                <div class="slide-1 section-slides fade">
+                                    <img src="./images/wine-trail/pic-1.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/wine-trail/pic-2.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/wine-trail/pic-3.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/wine-trail/pic-4.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/wine-trail/pic-5.png" alt="">
+                                </div>
+
+                                <!-- back and forward buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- dots on the slides -->
+                                <div style="text-align:center">
+                                    <span class="dot active" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                </div>
+                            </div>
+
+                            <!-- card with info -->
+                            <div class="carousel-description">
+                                <div class="site-rating">
+                                    <div class="icon-percentage">
+                                        <div class="icon">
+                                            <span class="fontAwesome">&#xf164;</span>
+                                        </div>
+                                        <div class="percentage">
+                                            <span>100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-numbers">
+                                        (545)
+                                    </div>
+                                </div>
+                                <div class="site-title">
+                                    <h3>Wine Trail Wilderness</h3>
+                                </div>
+                                <div class="site-info">
+                                    <span class="site-size">16 sites . RVs, Tents</span>
+                                    <span class="site-location">37 acres . Pomona, IL</span>
+                                </div>
+                                <div class="price">
+                                    from <span class="nightly-rate">$24</span> / night
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Riverbend -->
+                        <div class="favorites-card not-main">
+                            <div class="carousel">
+                                <div class="slide-1 section-slides fade">
+                                    <img src="./images/river-bend/pic-1.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/river-bend/pic-2.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/river-bend/pic-3.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/river-bend/pic-4.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/river-bend/pic-5.png" alt="">
+                                </div>
+
+                                <!-- back and forward buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- dots on the slides -->
+                                <div style="text-align:center">
+                                    <span class="dot active" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                </div>
+                            </div>
+
+                            <!-- card with info -->
+                            <div class="carousel-description">
+                                <div class="site-rating">
+                                    <div class="icon-percentage">
+                                        <div class="icon">
+                                            <span class="fontAwesome">&#xf164;</span>
+                                        </div>
+                                        <div class="percentage">
+                                            <span>96%</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-numbers">
+                                        (176)
+                                    </div>
+                                </div>
+                                <div class="site-title">
+                                    <h3>Riverbend RV Park and Campground</h3>
+                                </div>
+                                <div class="site-info">
+                                    <span class="site-size">15 sites . RVs, Tents</span>
+                                    <span class="site-location">23 acres . Mack Creek, MO</span>
+                                </div>
+                                <div class="price">
+                                    from <span class="nightly-rate">$18</span> / night
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sage Mountain -->
+                        <div class="favorites-card not-main">
+                            <div class="carousel">
+                                <div class="slide-1 section-slides fade">
+                                    <img src="./images/sage-mountain-imgs/pic-1.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/sage-mountain-imgs/pic-2.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/sage-mountain-imgs/pic-3.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/sage-mountain-imgs/pic-4.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/sage-mountain-imgs/pic-5.png" alt="">
+                                </div>
+
+                                <!-- back and forward buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- dots on the slides -->
+                                <div style="text-align:center">
+                                    <span class="dot active" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                </div>
+                            </div>
+
+                            <!-- card with info -->
+                            <div class="carousel-description">
+                                <div class="site-rating">
+                                    <div class="icon-percentage">
+                                        <div class="icon">
+                                            <span class="fontAwesome">&#xf164;</span>
+                                        </div>
+                                        <div class="percentage">
+                                            <span>98%</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-numbers">
+                                        (21)
+                                    </div>
+                                </div>
+                                <div class="site-title">
+                                    <h3>Sage Mountain Recreational Area MO</h3>
+                                </div>
+                                <div class="site-info">
+                                    <span class="site-size">10 sites . RVs, Tents</span>
+                                    <span class="site-location">50 acres . Berger, MO</span>
+                                </div>
+                                <div class="price">
+                                    from <span class="nightly-rate">$25</span> / night
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ozarks Piney -->
+                        <div class="favorites-card not-main">
+                            <div class="carousel">
+                                <div class="slide-1 section-slides fade">
+                                    <img src="./images/ozarks-piney/pic-1.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/ozarks-piney/pic-2.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/ozarks-piney/pic-3.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/ozarks-piney/pic-4.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/ozarks-piney/pic-5.png" alt="">
+                                </div>
+
+                                <!-- back and forward buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- dots on the slides -->
+                                <div style="text-align:center">
+                                    <span class="dot active" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                </div>
+                            </div>
+
+                            <!-- card with info -->
+                            <div class="carousel-description">
+                                <div class="site-rating">
+                                    <div class="icon-percentage">
+                                        <div class="icon">
+                                            <span class="fontAwesome">&#xf164;</span>
+                                        </div>
+                                        <div class="percentage">
+                                            <span>100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-numbers">
+                                        (56)
+                                    </div>
+                                </div>
+                                <div class="site-title">
+                                    <h3>Ozarks Piney Bend Riverfront</h3>
+                                </div>
+                                <div class="site-info">
+                                    <span class="site-size">7 sites . Lodging, RVs, Tents</span>
+                                    <span class="site-location">7 acres . Dixon, MO</span>
+                                </div>
+                                <div class="price">
+                                    from <span class="nightly-rate">$36</span> / night
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Peace Tree farm -->
+                        <div class="favorites-card">
+                            <div class="carousel">
+                                <div class="slide-1 section-slides fade">
+                                    <img src="./images/peace-tree/pic-1.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/peace-tree/pic-2.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/peace-tree/pic-3.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/peace-tree/pic-4.png" alt="">
+                                </div>
+                                <div class="section-slides fade">
+                                    <img src="./images/peace-tree/pic-5.png" alt="">
+                                </div>
+
+                                <!-- back and forward buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- dots on the slides -->
+                                <div style="text-align:center">
+                                    <span class="dot active" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                </div>
+                            </div>
+
+                            <!-- card with info -->
+                            <div class="carousel-description">
+                                <div class="site-rating">
+                                    <div class="icon-percentage">
+                                        <div class="icon">
+                                            <span class="fontAwesome">&#xf164;</span>
+                                        </div>
+                                        <div class="percentage">
+                                            <span>99%</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-numbers">
+                                        (171)
+                                    </div>
+                                </div>
+                                <div class="site-title">
+                                    <h3>Peace Tree Farms</h3>
+                                </div>
+                                <div class="site-info">
+                                    <span class="site-size">27 sites . Lodging, Tents</span>
+                                    <span class="site-location">176 acres . Eolia, MO</span>
+                                </div>
+                                <div class="price">
+                                    from <span class="nightly-rate">$12</span> / night
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- back and forward buttons -->
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                    </div>
+                    <!-- button -->
+                     <div class="show-more-btn">
+                        <button class="btn show-more-info-btn">Show all</button>
+                     </div>
+                </div>
                 <div class="explore-gifts"></div>
                 <div class="hosting"></div>
                 <div class="ways-to-find-yourself"></div>

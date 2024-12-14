@@ -1,11 +1,18 @@
 header {
-    align-items: center;
     box-sizing: border-box;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.wrapper-header {
+    align-items: center;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 10px 24px;
 }
 
 

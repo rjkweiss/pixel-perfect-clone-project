@@ -1,0 +1,86 @@
+/* thin fonts */
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-Thin-BF661746edb928b.otf') format("truetype");
+    font-weight:100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-ThinItalic-BF661746edc3fda.otf') format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* lighter */
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-Light-BF661746edb619a.otf') format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-MediumItalic-BF661746ed8877c.otf') format("truetype");
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* Regular fonts */
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-Regular-BF661746edbee52.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-RegularItalic-BF661746edb584e.otf') format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* medium fonts */
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-Medium-BF661746ed8cff9.otf') format("truetype");
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-MediumItalic-BF661746ed8877c.otf') format("truetype");
+    font-weight: medium;
+    font-style: italic;
+}
+
+/* semi-bold */
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-Semibold-BF661746ed9242e.otf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-SemiboldItalic-BF661746ed84cd9.otf') format("truetype");
+    font-weight:600;
+    font-style: italic;
+}
+
+/* bold */
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-Bold-BF661746ed7c530.otf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Calibre";
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-BoldItalic-BF661746edbbfdf.otf') format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
