@@ -329,3 +329,115 @@ to {opacity: 1}
 .show-more-info-btn button:hover {
     border: 1px solid rgb(51, 49, 33);
 }
+
+.explore-gifts {
+    display: flex;
+    gap: 20px;
+    padding: 40px 0px;
+}
+
+.explore-gifts img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 24px 24px 0px 0px;
+}
+.explore-camp {
+    max-width: 50%;
+    background-color: rgb(123, 104, 125);
+    border-radius: 24px 24px 0px 0px;
+}
+
+.gift-card {
+    max-width: 50%;
+    background-color: rgb(239, 226, 204);
+    border-radius: 24px 24px 0px 0px;
+}
+.explore-gift-img-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;;
+}
+.explore-gift-text-description {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.explore-gift-section-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.explore-gift-section-text {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.explore-gift-btn {
+    padding: 12px 36px;
+    border-radius: 24px;
+    font-size: 20px;
+    line-height: 26px;
+    border: none;
+}
+
+.explore-camp-btn {
+    background-color: white;
+    color: rgb(123, 104, 125);
+}
+
+.gift-card-btn {
+    background-color: rgb(51, 49, 33);
+    color: white;
+}
+.hosting {
+    padding: 40px 0px;
+    position: relative;
+}
+
+.hosting img {
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    border:1px solid transparent;
+    border-radius: 24px;
+}
+.hosting-description {
+    background-color: rgb(199, 79, 45);
+    border-radius: 24px;
+    color: rgb(253, 251, 246);
+    display: flex;
+    flex-direction: column;
+    padding: 29px 24px;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    width: 100%;
+    max-width: 372px;
+}
+
+.hosting h2 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: normal;
+}
+
+.hosting-section-text {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px
+}
+ .hosting-btn-section button {
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    color: rgb(199, 79, 45);
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 18px;
+    padding: 12px 36px;
+    width: fit-content;
+}
