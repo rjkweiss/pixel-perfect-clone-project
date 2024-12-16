@@ -29,7 +29,7 @@
 /* Regular fonts */
 @font-face {
     font-family: "Calibre";
-    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-Regular-BF661746edbee52.otf') format("truetype");
+    src: url('../fonts/calibre-font-family-1733949033-0/TestCalibre-Regular-BF661746edbee52.otf');
     font-weight: normal;
     font-style: normal;
 }
